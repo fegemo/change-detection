@@ -16,7 +16,7 @@ Este trabalho foi feito por:
 
 - [Douglas Ludgério](https://github.com/douglaslud) ()
 - [Flávio Coutinho](https://github.com/fegemo) (2019679021)
-- [Ricardo de Oliveira](https://github.com/Tsuchiryu) ()
+- [Ricardo de Oliveira](https://github.com/Tsuchiryu) (2012055294)
 
 ## Lista de Tarefas
 
