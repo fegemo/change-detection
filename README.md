@@ -18,6 +18,9 @@ Este trabalho foi feito por:
 - [Flávio Coutinho](https://github.com/fegemo) (2019679021)
 - [Ricardo de Oliveira](https://github.com/Tsuchiryu) (2012055294)
 
+[enunciado]: EnunciadoTP2_change.pdf
+[onera]: https://rcdaudt.github.io/oscd/
+
 ## Lista de Tarefas
 
 1. ( ) Entender toda a especificação
@@ -28,18 +31,35 @@ Este trabalho foi feito por:
 1. ( ) Segmentar cada banda em t1 usando SLIC
    - Isso vai gerar 13 imagens
    - **Dúvida:** devemos segmentar apenas em t1 e usar as mesmas regiões para t2?
+    - **Resposta:** isso mesmo. Assim é possível comparar cada superpixel
+      em t1 e t2.
 1. ( ) Extrair características de textura de cada superpixel em cada banda
 1. ( ) Classificar cada superpixel/banda em mudança ou não (distância euclidiana)
-   - **Dúvida:** a classificação pode/deve ser feita por um limiar experimental ou deve haver algo mais rebuscado (eg, rede convolucional)?
-1. ( ) Gerar mapa binário de mudanças em cada banda
-   - **Dúvida:** o mapa binário é simplesmente todos os superpixels classificados como mudança?
+   - **Dúvida:** a classificação pode/deve ser feita por um limiar
+     experimental ou deve haver algo mais rebuscado (eg, rede convolucional)?
+     - **Resposta:** uma abordagem simples é achar um limiar experimentalmente
+       mesmo. Mas como é um trabalho da pós, o professor dá liberdade para
+       determinarmos a classificação de outra forma (eg, com uma rede)
+1. ( ) Gerar mapa binário de mudanças em cada banda.
+   - **Dúvida:** o mapa binário é simplesmente todos os superpixels
+     classificados como mudança?
+     - **Resposta:** isso mesmo.
 1. ( ) Combinar os mapas binários por banda
 1. ( ) Comparar a combinação das bandas com o _ground truth_ (via acurácia)
-   - **Dúvida:** há 10 imagens sem _ground truth_... não será possível fazer esta etapa, certo?
+   - **Dúvida:** há 10 imagens sem _ground truth_... não será possível
+     fazer esta etapa, certo?
+     - **Resposta:** isso mesmo, mas se submetermos as nossas imagens de
+       detecção de mudanças no sistema da Onera, o sistema dirá qual é o nosso
+       erro.
 1. ( ) Executar passos 2-8 com +1 cidade até acabar todas
 1. ( ) Relatar as escolhas de parâmetros/métodos para cada cidade
 1. ( ) Implementar um script para avaliação do detector
-   - **Dúvida:** para avaliar usaremos as acurácias das cidades que temos _ground truth_? Aí podemos ter o valor das acurácias, média, desvio padrão, coeficiente de correlação etc.?
+   - **Dúvida:** para avaliar usaremos as acurácias das cidades que
+     temos _ground truth_? Aí podemos ter o valor das acurácias,
+     média, desvio padrão, coeficiente de correlação etc.?
+     - **Resposta:** sim, vamos propor algum indicador agregado para falar
+       da qualidade da solução proposta para detecção de mudanças.
    - **Dúvida:** como avaliar as imagens sem _ground truth_?
+     - **Resposta:** basta enviá-las para o sistema e ver como ele responde.
 1. ( ) Documentar o trabalho (execução do "classificador final")
 1. ( ) Produzir e formatar relatório final (3 páginas no máximo)
