@@ -12,11 +12,7 @@ As imagens foram obtidas pelo satélite Sentinel-2 entre 2015 e 2018
 e são compostas por amostras em 13 bandas. São imagens de 24 localidades,
 das quais para 14 existe o valor _ground truth_ conhecido.
 
-Este trabalho foi feito por:
-
-- [Douglas Ludgério](https://github.com/douglaslud) ()
-- [Flávio Coutinho](https://github.com/fegemo) (2019679021)
-- [Ricardo de Oliveira](https://github.com/Tsuchiryu) (2012055294)
+Este trabalho foi feito por [Flávio Coutinho](https://github.com/fegemo) (2019679021).
 
 [enunciado]: EnunciadoTP2_change.pdf
 [onera]: https://rcdaudt.github.io/oscd/
