@@ -22,7 +22,7 @@ Este trabalho foi feito por [Flávio Coutinho](https://github.com/fegemo) (20196
 O [relatório][relatorio] com as decisões metodológicas e os resultados
 pode ser encontrado neste mesmo repositório.
 
-[relatorio]: tree/master/relatorio/relatorio_tp2_pdi_change_detection.pdf
+[relatorio]: relatorio/relatorio_tp2_pdi_change_detection.pdf
 
 
 ## Resultados
@@ -30,4 +30,4 @@ pode ser encontrado neste mesmo repositório.
 Os [resultados][resultados] da execução do código podem ser vistos,
 também, neste repositório.
 
-[resultados]: tree/master/change-detection.ipynb
+[resultados]: change-detection.ipynb
