@@ -17,45 +17,17 @@ Este trabalho foi feito por [Flávio Coutinho](https://github.com/fegemo) (20196
 [enunciado]: EnunciadoTP2_change.pdf
 [onera]: https://rcdaudt.github.io/oscd/
 
-## Lista de Tarefas
+## Relatório
 
-1. ( ) Entender toda a especificação
-1. ( ) Entender o formato de captura (as 13 bandas) do satélite Sentinel-2
-   - Fontes: [engsat.com.br](http://www.engesat.com.br/sentinel-2/)
-   - Fontes: [Sentinel-2 na Wikipedia](https://en.wikipedia.org/wiki/Sentinel-2)
-1. ( ) Escolher uma cidade como exemplo que tenha _ground truth_: Águas Claras?
-1. ( ) Segmentar cada banda em t1 usando SLIC
-   - Isso vai gerar 13 imagens
-   - **Dúvida:** devemos segmentar apenas em t1 e usar as mesmas regiões para t2?
-    - **Resposta:** isso mesmo. Assim é possível comparar cada superpixel
-      em t1 e t2.
-1. ( ) Extrair características de textura de cada superpixel em cada banda
-1. ( ) Classificar cada superpixel/banda em mudança ou não (distância euclidiana)
-   - **Dúvida:** a classificação pode/deve ser feita por um limiar
-     experimental ou deve haver algo mais rebuscado (eg, rede convolucional)?
-     - **Resposta:** uma abordagem simples é achar um limiar experimentalmente
-       mesmo. Mas como é um trabalho da pós, o professor dá liberdade para
-       determinarmos a classificação de outra forma (eg, com uma rede)
-1. ( ) Gerar mapa binário de mudanças em cada banda.
-   - **Dúvida:** o mapa binário é simplesmente todos os superpixels
-     classificados como mudança?
-     - **Resposta:** isso mesmo.
-1. ( ) Combinar os mapas binários por banda
-1. ( ) Comparar a combinação das bandas com o _ground truth_ (via acurácia)
-   - **Dúvida:** há 10 imagens sem _ground truth_... não será possível
-     fazer esta etapa, certo?
-     - **Resposta:** isso mesmo, mas se submetermos as nossas imagens de
-       detecção de mudanças no sistema da Onera, o sistema dirá qual é o nosso
-       erro.
-1. ( ) Executar passos 2-8 com +1 cidade até acabar todas
-1. ( ) Relatar as escolhas de parâmetros/métodos para cada cidade
-1. ( ) Implementar um script para avaliação do detector
-   - **Dúvida:** para avaliar usaremos as acurácias das cidades que
-     temos _ground truth_? Aí podemos ter o valor das acurácias,
-     média, desvio padrão, coeficiente de correlação etc.?
-     - **Resposta:** sim, vamos propor algum indicador agregado para falar
-       da qualidade da solução proposta para detecção de mudanças.
-   - **Dúvida:** como avaliar as imagens sem _ground truth_?
-     - **Resposta:** basta enviá-las para o sistema e ver como ele responde.
-1. ( ) Documentar o trabalho (execução do "classificador final")
-1. ( ) Produzir e formatar relatório final (3 páginas no máximo)
+O [relatório][relatorio] com as decisões metodológicas e os resultados
+pode ser encontrado neste mesmo repositório.
+
+[relatorio]: tree/master/relatorio/relatorio_tp2_pdi_change_detection.pdf
+
+
+## Resultados
+
+Os [resultados][resultados] da execução do código podem ser vistos,
+também, neste repositório.
+
+[resultados]: tree/master/change-detection.ipynb
